@@ -8,7 +8,7 @@
  <a href="#autor">Author</a> •
 </p>
 
-
+<div>
 
 ![ezgif com-gif-maker (5)](https://user-images.githubusercontent.com/74837527/139506658-f250cfba-cd95-44fd-963d-9b1fcfca86bc.gif) 
 
@@ -18,7 +18,7 @@
 
 ![ezgif com-gif-maker (7)](https://user-images.githubusercontent.com/74837527/139506821-4ab1ad10-ab67-43ee-baab-fbb35efafdcc.gif)
 
-
+</div>
 
 
 
