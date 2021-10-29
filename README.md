@@ -1,14 +1,14 @@
-<h1 align="center">App Técnico</h1>
+<h1 align="center">Swipe Jobs Test</h1>
 
 <p align="center">This project is an page aplication for a test in the SwipeJobs company.</p>
-Wsss
+
 <p align="center">
  <a href="#features">Feature</a> •
   <a href="#🔨-tecnologias">Technologies</a> •
  <a href="#autor">Author</a> •
 </p>
 
----
+![ezgif com-gif-maker (5)](https://user-images.githubusercontent.com/74837527/139506658-f250cfba-cd95-44fd-963d-9b1fcfca86bc.gif) ![ezgif com-gif-maker (6)](https://user-images.githubusercontent.com/74837527/139506763-94884e7a-e9f8-4c97-9847-27e5c3871e06.gif)![ezgif com-gif-maker (7)](https://user-images.githubusercontent.com/74837527/139506821-4ab1ad10-ab67-43ee-baab-fbb35efafdcc.gif)
 
 <br>
 
