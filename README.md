@@ -44,7 +44,6 @@ The following packages were used on this project
 - [React Native Responsive Font Size](https://www.npmjs.com/package/react-native-responsive-fontsize)
 - [React Native Testing Library](https://testing-library.com/docs/ecosystem-user-event/)
 - [React Native Linear Gradient](https://github.com/react-native-linear-gradient/react-native-linear-gradient)
-- [React Native Linear Gradient](https://github.com/react-native-linear-gradient/react-native-linear-gradient)
 
 ---
 
