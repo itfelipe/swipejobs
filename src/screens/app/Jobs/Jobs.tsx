@@ -1,12 +1,12 @@
 import React, { useContext, useEffect, useState, } from 'react';
 
-import { JobCard,  Typography} from '../../components';
+import { JobCard,  Typography} from '../../../components';
 
 import {Container, MyFlatList } from './jobs.styles';
 
-import Logo from '../../assets/svg/swipejobss.svg'
-import { Context } from '../../context/ContextProvider';
-import getJobsData from '../../services/request/jobs';
+import Logo from '../../../assets/svg/swipejobss.svg'
+import { Context } from '../../../context/ContextProvider';
+import getJobsData from '../../../services/request/jobs';
 
 
 const Jobs = ({navigation}) => {

@@ -19,7 +19,11 @@ const getGeolocation = async (props:GeolocationProps) => {
   const lat = response.data.results[0].geometry.location.lat
   const long = response.data.results[0].geometry.location.lng
 
+  //https://www.google.com.br/maps/dir//${lat},${long}/@${lat},${long},17z` 
+  //this one its the route url, its directly send you to the direction, to start routing
+
   const url = `https://www.google.com.br/maps/search/${lat},${long}/@${lat},${long},17z`
+  console.log();
   
   Linking.openURL(url);
 }

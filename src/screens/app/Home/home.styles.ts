@@ -1,6 +1,6 @@
 import { Dimensions } from 'react-native';
 import styled from 'styled-components/native';
-import size from '../../utils/size';
+import size from '../../../utils/size';
 
 export const Container = styled.SafeAreaView`
   flex: 1;
@@ -14,7 +14,7 @@ export const JobContainer = styled.View`
   overflow: hidden;
 `;
 
-export const HeaderContainer = styled.View`
+export const MiddleContainer = styled.View`
   align-items: center;
   margin-top: ${size(20)}px;
 `
@@ -22,7 +22,7 @@ export const HeaderContainer = styled.View`
 export const UpperHeaderContainer = styled.View`
   align-items: center;
   background-color: ${({ theme }) => theme.deepBlue};
-  height: ${size(130)}px;
+  height: ${size(80)}px;
   margin-bottom: ${size(50)}px;
 `
 
@@ -45,11 +45,13 @@ export const Image = styled.Image`
 `
 export const LogoImage = styled.Image`
   margin-top: ${size(10)}px;
-  width:${size(Dimensions.get('window').width/1.5)}px;
-  height: ${size(54)}px;
+  width: ${size(200)}px;
+  height: ${size(42)}px;
+  align-self: center;
+  margin: 10px;
   
 `
 export const LottieContainer = styled.View`
   width: 70%;
-  height: 50%;
+  height: 45%;
 `

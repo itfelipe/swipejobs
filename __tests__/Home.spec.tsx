@@ -1,7 +1,7 @@
 
 import 'react-native';
 import React from 'react';
-import Home from '../src/screens/Home/Home';
+import Home from '../src/screens/app/Home/Home';
 
 // Note: test renderer must be required after react-native.
 import {render} from '@testing-library/react-native';
@@ -21,3 +21,4 @@ it('should find the greeting', () => {
   
     const searchJobsButton = getByTestId('myGreeting')
 });
+

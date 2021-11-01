@@ -7,7 +7,7 @@ export const ContextProvider = ({children}) => {
   const [loading, setLoading] = useState(false)
   const [userInfo, setUserInfo] = useState({})
   const [jobsData, setJobsData] = useState()
-
+  const [logged, setLogged] = useState(false)
 
   const addUserInfo = userInfo =>{
     setUserInfo(userInfo)
@@ -21,6 +21,7 @@ export const ContextProvider = ({children}) => {
       userInfo, addUserInfo, 
       jobsData, addJobsData,
       loading, setLoading,
+      logged, setLogged
       }}> 
       {children}
     </Context.Provider>

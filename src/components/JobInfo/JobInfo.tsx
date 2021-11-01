@@ -37,8 +37,12 @@ const JobInfo = (props:JobInfoProps) => {
 
         {icon==='calendar-month' && description? 
         description.map((item,index)=> 
-        index < 2 && (<Typography key={index} variant='Gotham12'>{formatData({startDate:item.startDate,endDate:item.endDate})}</Typography>))
-        :<Typography variant='Gotham12'>{description}</Typography>}
+        index < 2 && (
+        <Typography key={index} variant='Gotham12'>{formatData({startDate:item.startDate,endDate:item.endDate})}</Typography>)
+        )
+        :
+        (<Typography variant='Gotham12'>{description}</Typography>
+        )}
         
         {icon === 'map-marker' && 
         <Typography variant='Gotham12'>{miles} miles from your job location</Typography>
@@ -53,7 +57,10 @@ const JobInfo = (props:JobInfoProps) => {
       </ButtonIcon>
 
       }
-     <ShiftModal shifts={icon==='calendar-month' && description? description: null} visible={visible} modalHandler={onPress}/>
+     <ShiftModal 
+     shifts={icon==='calendar-month' && description? description: null} 
+     visible={visible} 
+     modalHandler={onPress}/>
     </Container>
     
   

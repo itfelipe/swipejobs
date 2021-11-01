@@ -40,7 +40,9 @@ const ShiftModal = (props: ModalProps) => {
 
         <ButtonContainer key={index}>
           <ModalButton onPress={() => {}}>
-            <Typography variant='Gotham16' color={'white'}>{formatData({startDate:item.startDate,endDate:item.endDate})}</Typography>
+            <Typography variant='Gotham16' color={'white'}>
+              {formatData({startDate:item.startDate,endDate:item.endDate})}
+            </Typography>
           </ModalButton>
         </ButtonContainer>
         ))}

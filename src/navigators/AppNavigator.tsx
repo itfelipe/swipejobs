@@ -3,8 +3,8 @@ import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 
 
-import Home from '../screens/Home/Home';
-import Jobs from '../screens/Jobs/Jobs';
+import Home from '../screens/app/Home/Home';
+import Jobs from '../screens/app/Jobs/Jobs';
 
 // TabBar
 

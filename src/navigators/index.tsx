@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useContext, useState } from 'react';
 import { StatusBar } from 'react-native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import {
@@ -7,14 +7,15 @@ import {
 } from '@react-navigation/native';
 
 
-import App from './AppNavigator';
+import AppNavigator from './AppNavigator';
+import AuthNavigator from './AuthNavigator';
+import { Context } from '../context/ContextProvider';
 
 const Navigators = () => {
  
 
   const Stack = createNativeStackNavigator();
-
-  
+  const {logged} = useContext(Context)  
   return (
     <>
       <StatusBar barStyle='light-content' backgroundColor='#000000' />
@@ -25,14 +26,28 @@ const Navigators = () => {
             
           }}
         >
-            <Stack.Screen
+          {logged? 
+           <Stack.Screen
               name='App'
-              component={App}
+              component={AppNavigator}
               options={{
                 animationTypeForReplace: 'push',
                 headerShown: false,
               }}
             />
+            
+            :
+        
+            <Stack.Screen
+              name='Auth'
+              component={AuthNavigator}
+              options={{
+                animationTypeForReplace: 'push',
+                headerShown: false,
+              }}
+            />
+        }
+           
         </Stack.Navigator>
       </NavigationContainer>
     </>

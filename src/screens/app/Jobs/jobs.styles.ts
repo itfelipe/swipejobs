@@ -1,6 +1,6 @@
 import { FlatList } from 'react-native';
 import styled from 'styled-components/native';
-import size from '../../utils/size';
+import size from '../../../utils/size';
 
 export const Container = styled.View`
   flex: 1;

@@ -61,13 +61,30 @@ export default function JobInfoList(props:JobInfoListProps) {
     {!loading ? (
    <Container>
    
-        <JobInfo title="Shift Dates" description={shift} icon='calendar-month' onPress={()=>modalHandler()} visible={isModalOpen}/>
+        <JobInfo 
+        title="Shift Dates" 
+        description={shift} 
+        icon='calendar-month' 
+        onPress={()=>modalHandler()} 
+        visible={isModalOpen}/>
         <SeparationLine/>
-        <JobInfo title="Location" description={location} miles={miles} icon='map-marker' onPress={()=>getGeolocation({address:location})}/>
+
+        <JobInfo title="Location" 
+        description={location} 
+        miles={miles} icon='map-marker' 
+        onPress={()=>getGeolocation({address:location})}/>
          <SeparationLine/>
-        <JobInfo title="Requirements" description={requirements?requirements:"No requirements infos"} icon='tools'/>
+
+        <JobInfo 
+        title="Requirements" 
+        description={requirements?requirements:"No requirements infos"} 
+        icon='tools'/>
          <SeparationLine/>
-        <JobInfo title="Report To" description={reportTo?reportTo.name + ', ' + cellphoneMask(reportTo.phone):'No data available'} icon='account-circle'/>
+         
+        <JobInfo 
+        title="Report To" 
+        description={reportTo?reportTo.name + ', ' + cellphoneMask(reportTo.phone):'No data available'} 
+        icon='account-circle'/>
         
         <ButtonContainer>
           <Button title='No Thanks' 

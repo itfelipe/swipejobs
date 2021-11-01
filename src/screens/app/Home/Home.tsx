@@ -1,13 +1,14 @@
 import React, { useContext, useEffect, useState } from 'react';
 
-import {  Button,  Typography} from '../../components';
+import {  Button,  Typography} from '../../../components';
 
-import { Container, JobContainer, HeaderContainer, LottieContainer,UpperHeaderContainer, ImageContainer, Image, LogoImage } from './home.styles';
+import { Container, JobContainer, MiddleContainer, LottieContainer,UpperHeaderContainer, ImageContainer, Image, LogoImage } from './home.styles';
 
 import Lottie from 'lottie-react-native'
 
-import getProfileData from '../../services/request/profile';
-import { Context } from '../../context/ContextProvider';
+import getProfileData from '../../../services/request/profile';
+import { Context } from '../../../context/ContextProvider';
+import size from '../../../utils/size';
 
 
 const Home = ({navigation}) => {
@@ -51,8 +52,8 @@ const Home = ({navigation}) => {
      }
    }
   
-    const imageUri = require('../../assets/images/jim.jpg')
-    const logoUri = require('../../assets/images/swipejobs_logo.png')
+    const imageUri = require('../../../assets/images/jim.jpg')
+    const logoUri = require('../../../assets/images/swipejobs_logo.png')
   return (
   
 
@@ -61,22 +62,29 @@ const Home = ({navigation}) => {
 
       <JobContainer>
         <UpperHeaderContainer>
-         <LogoImage source={logoUri?logoUri:null}/>
            <ImageContainer>
              <Image source={imageUri?imageUri:null}/>
            </ImageContainer>
         </UpperHeaderContainer>
-        <HeaderContainer>
+
+        <MiddleContainer>
           <Typography testID="myGreeting" variant="Gotham18Bold">{greeting}, {userInfo?userInfo.firstName + ' ' + userInfo.lastName:'People'}</Typography>
           <Typography style={{width:'80%', textAlign:'center'}} variant="Gotham14">Are you ready to take a job at the tap of a button?</Typography>
 
           <LottieContainer>
-            <Lottie source={require('../../assets/animations/search.json')} autoPlay loop />
+            <Lottie source={require('../../../assets/animations/search.json')} autoPlay loop />
           </LottieContainer>
         
-        </HeaderContainer>
-        
-          <Button testID="myButton" containerStyle={{width:'60%', alignSelf:'center'}} title="Search Jobs" onPress={()=> navigation.navigate('JobsScreen')}/>
+        </MiddleContainer>
+
+          <Button 
+          testID="myButton" 
+          containerStyle={{width:'60%', alignSelf:'center', marginBottom:size(16)}} 
+          title="Search Jobs" 
+          onPress={()=> navigation.navigate('JobsScreen')}/>
+
+         <LogoImage source={logoUri?logoUri:null}/>
+
       </JobContainer>
 
     </Container>
