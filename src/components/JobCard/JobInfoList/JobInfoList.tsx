@@ -77,7 +77,7 @@ export default function JobInfoList(props:JobInfoListProps) {
 
         <JobInfo 
         title="Requirements" 
-        description={requirements?requirements:"No requirements infos"} 
+        requirements={requirements?requirements:["No requirements infos"]} 
         icon='tools'/>
          <SeparationLine/>
          

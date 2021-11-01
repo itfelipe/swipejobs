@@ -10,6 +10,7 @@ import formatData from '../../utils/formatData'
 interface JobInfoProps {
   title:string;
   description:string | [];
+  requirements:[string];
   icon:string;
   loading:boolean;
   miles?:number;
@@ -20,9 +21,9 @@ interface JobInfoProps {
 
 const JobInfo = (props:JobInfoProps) => {
 
-  const { title, description,icon,miles,onPress,visible } = props
+  const { title, description,icon,miles,onPress,visible,requirements } = props
   
-
+  console.log(description)
   return (
    
     <Container onPress={onPress} activeOpacity={0.5}>
@@ -31,22 +32,26 @@ const JobInfo = (props:JobInfoProps) => {
         <Icon name={icon} size={30} color="#000000"/>
       </LeftContainer>
 
-      <RightContainer>
+      <RightContainer >
 
-        <Typography variant='Gotham16Bold'>{title}</Typography>
+        <Typography variant='Gotham16Bold' >{title}</Typography>
 
-        {icon==='calendar-month' && description? 
+        {icon==='calendar-month' && description &&
         description.map((item,index)=> 
         index < 2 && (
         <Typography key={index} variant='Gotham12'>{formatData({startDate:item.startDate,endDate:item.endDate})}</Typography>)
-        )
-        :
-        (<Typography variant='Gotham12'>{description}</Typography>
         )}
-        
+
         {icon === 'map-marker' && 
         <Typography variant='Gotham12'>{miles} miles from your job location</Typography>
         }
+
+        {icon==='tools' && requirements.map((item,index)=> 
+        (
+        <Typography key={index} variant='Gotham12'> - {item} </Typography>
+        ))}
+
+        {icon==='account-circle' && <Typography variant='Gotham12'>{description} </Typography>}
 
       </RightContainer>
     </>
@@ -58,7 +63,7 @@ const JobInfo = (props:JobInfoProps) => {
 
       }
      <ShiftModal 
-     shifts={icon==='calendar-month' && description? description: null} 
+     shifts={icon==='calendar-month' && description ? description: null} 
      visible={visible} 
      modalHandler={onPress}/>
     </Container>
