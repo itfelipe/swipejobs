@@ -63,7 +63,7 @@ const Home = ({navigation}) => {
       <JobContainer>
         <UpperHeaderContainer>
            <ImageContainer>
-             <Image source={imageUri?imageUri:null}/>
+             <Image testID='image' source={imageUri?imageUri:null}/>
            </ImageContainer>
         </UpperHeaderContainer>
 

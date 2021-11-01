@@ -33,9 +33,10 @@ export const JobContainer = styled.View`
 
 export const UpperHeaderContainer = styled.View`
   align-items: center;
-  background-color: ${({ theme }) => theme.deepBlue};
+  background-color: ${({ theme }) => theme.oliveGreen};
   height: ${size(90)}px;
   margin-bottom: ${size(50)}px;
+  justify-content: center;
 `
 
 export const ImageContainer = styled.View`
@@ -60,15 +61,7 @@ export const LogoImage = styled.Image`
   width: ${size(200)}px;
   height: ${size(42)}px;
   align-self: center;
-  margin: 10px;
   
-`
-export const MiddleContainer = styled.View`
-  align-self: center;
-  align-items: center;
-  text-align: center;
-  width: 100%;
-  margin-top: ${size(20)}px;
 `
 
 export const BottomContainer = styled.View`

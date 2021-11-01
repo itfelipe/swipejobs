@@ -39,32 +39,27 @@ const Login = ({navigation}) => {
     <Container>
 
       <JobContainer>
-        <UpperHeaderContainer>                
-
-           <ImageContainer>
-             <Image source={imageUri?imageUri:null}/>
-           </ImageContainer>
-           
+        <UpperHeaderContainer>               
+        <LogoImage source={logoUri?logoUri:null}/>      
         </UpperHeaderContainer>
-        <MiddleContainer>
-           <Typography variant="Gotham14" >Welcome back, {userInfo.firstName}</Typography>
-        </MiddleContainer>
+
         <BottomContainer>
 
           <InputContainer>
           <Input label='E-mail' 
           placeholder='test.mail@gmail.com'
           style={{marginBottom:size(20)}}
+
           />
 
           <Input label='Password'
           placeholder='123456789'/>
          </InputContainer>
 
-        <Button title="LOGIN" containerStyle={{width:'60%', marginBottom:size(90)}} onPress={()=>handleLogin()} />
+        <Button title="LOGIN" containerStyle={{width:'60%',marginBottom:size(6)}} onPress={()=>handleLogin()} />
 
-                   <LogoImage source={logoUri?logoUri:null}/>   
-
+       <Typography variant="Gotham10" style={{marginBottom:size(8)}}>Forgot Password? </Typography>
+       <Typography variant="Gotham10">Sign Up</Typography>
             </BottomContainer>
       </JobContainer>
 

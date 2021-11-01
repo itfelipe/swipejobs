@@ -18,7 +18,7 @@ const Jobs = ({navigation}) => {
     navigation.setOptions({
       headerRight: () => <Typography testID="userName" variant="Gotham18" style={{color:'black'}}>{userInfo.firstName} {userInfo.lastName}</Typography>,
       headerLeft: () => (
-        <Logo/>
+        <Logo testID='logo'/>
       ),
     });
   }, [navigation]);

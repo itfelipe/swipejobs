@@ -2,8 +2,6 @@
 import 'react-native';
 import React from 'react';
 import Home from '../src/screens/app/Home/Home';
-
-// Note: test renderer must be required after react-native.
 import {render} from '@testing-library/react-native';
 
 jest.useFakeTimers();
@@ -22,3 +20,9 @@ it('should find the greeting', () => {
     const searchJobsButton = getByTestId('myGreeting')
 });
 
+it('should find the image', () => {
+
+    const {getByTestId}= render(<Home />);
+  
+    const image = getByTestId('image')
+});

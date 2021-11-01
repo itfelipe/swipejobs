@@ -21,7 +21,7 @@ export const MiddleContainer = styled.View`
 
 export const UpperHeaderContainer = styled.View`
   align-items: center;
-  background-color: ${({ theme }) => theme.deepBlue};
+  background-color: ${({ theme }) => theme.oliveGreen};
   height: ${size(80)}px;
   margin-bottom: ${size(50)}px;
 `
