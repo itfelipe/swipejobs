@@ -23,7 +23,7 @@
 - [x] Shimmers
 - [x] Tests
 - [x] Lottie
-
+- [x] Typescript
 
 
 ### 🔨 Technologies
