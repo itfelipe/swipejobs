@@ -16,6 +16,8 @@
 
 ### Features
 
+- [x] Login screen example (auth)
+- [x] Home screen example
 - [x] Animated API Animations
 - [x] Geolocation API
 - [x] Jobs
