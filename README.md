@@ -5,7 +5,7 @@
 <p align="center">
  <a href="#features">Feature</a> •
   <a href="#🔨-tecnologias">Technologies</a> •
- <a href="#author">Author</a> •
+ <a href="#author">Author</a> 
 </p>
 
 ![ezgif com-gif-maker (11)](https://user-images.githubusercontent.com/74837527/139609553-0608dfa1-ac69-42a1-9820-3abbb6746b1e.gif)
